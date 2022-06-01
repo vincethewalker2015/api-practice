@@ -25,4 +25,8 @@ application up and running.
   ```
   curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/books/1 -v
   ```
-* ...
+* Request from Api folder
+
+  ```
+  curl http://localhost:3000/api/v1/books
+  ```
