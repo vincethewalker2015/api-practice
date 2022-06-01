@@ -3,22 +3,18 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Curl Requests:
 
-* Ruby version
+* Get Request
+  curl http://localhost:3000/books
 
-* System dependencies
+* Get Request (Verbose version)
+  curl http://localhost:3000/books 
 
-* Configuration
+* Post Request
+  curl --header "Content-Type: application/json" --request POST --data '{"author": "JK", "title": "Harry Potter"}' http://localhost:3000/books -v
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Delete/Destroy Request
+  curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/books/1 -v
 
 * ...
